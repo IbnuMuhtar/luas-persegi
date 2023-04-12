@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+// Fungsi untuk menghitung luas persegi
+int luas_persegi(int sisi) {
+    return sisi * sisi;
+}
+
+int main() {
+    int sisi;
+    cout << "Masukkan panjang sisi persegi: ";
+    cin >> sisi;
+
+    int luas = luas_persegi(sisi);
+    cout << "Luas persegi dengan sisi " << sisi << " adalah " << luas << endl;
+
+    return 0;
+}
