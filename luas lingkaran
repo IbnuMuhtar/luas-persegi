@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+const float PI = 3.14159; // konstanta π
+
+int main() {
+    float jari_jari, luas;
+    cout << "Masukkan jari-jari lingkaran: ";
+    cin >> jari_jari;
+
+    // menghitung luas lingkaran
+    luas = PI * jari_jari * jari_jari;
+
+    cout << "Luas lingkaran dengan jari-jari " << jari_jari << " adalah " << luas << endl;
+
+    return 0;
+}
