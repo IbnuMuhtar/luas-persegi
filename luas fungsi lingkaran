@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+const float PI = 3.14159; // konstanta π
+
+// Fungsi untuk menghitung luas lingkaran
+float luas_lingkaran(float jari_jari) {
+    return PI * jari_jari * jari_jari;
+}
+
+int main() {
+    float jari_jari;
+    cout << "Masukkan jari-jari lingkaran: ";
+    cin >> jari_jari;
+
+    float luas = luas_lingkaran(jari_jari);
+    cout << "Luas lingkaran dengan jari-jari " << jari_jari << " adalah " << luas << endl;
+
+    return 0;
+}
