@@ -1,0 +1,9 @@
+// Contoh fungsi dengan tipe pengembalian int, nama fungsi tambah, dan dua parameter bertipe int
+int tambah(int a, int b) {
+   return a + b;
+}
+
+// Contoh fungsi tanpa pengembalian nilai (void), nama fungsi tampilkan, dan satu parameter bertipe string
+void tampilkan(string pesan) {
+   cout << pesan << endl;
+}
