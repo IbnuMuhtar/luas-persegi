@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double jari_jari, tinggi, luas_alas, luas_permukaan, volume;
+
+   const double pi = 3.14159265;
+
+   // Meminta input dari user
+   cout << "Masukkan jari-jari: ";
+   cin >> jari_jari;
+
+   cout << "Masukkan tinggi: ";
+   cin >> tinggi;
+
+   // Menghitung luas alas
+   luas_alas = pi * pow(jari_jari, 2);
+
+   // Menghitung luas permukaan
+   luas_permukaan = pi * jari_jari * (jari_jari + sqrt(pow(tinggi, 2) + pow(jari_jari, 2)));
+
+   // Menghitung volume kerucut
+   volume = (1.0/3.0) * pi * pow(jari_jari, 2) * tinggi;
+
+   // Mencetak hasil perhitungan
+   cout << "Luas alas: " << luas_alas << endl;
+   cout << "Luas permukaan: " << luas_permukaan << endl;
+   cout << "Volume kerucut: " << volume << endl;
+
+   return 0;
+}
