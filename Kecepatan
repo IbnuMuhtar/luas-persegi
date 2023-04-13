@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double jarak, waktu, kecepatan;
+
+   // Meminta input dari user
+   cout << "Masukkan jarak tempuh (km): ";
+   cin >> jarak;
+
+   cout << "Masukkan waktu tempuh (jam): ";
+   cin >> waktu;
+
+   // Menghitung kecepatan rata-rata
+   kecepatan = jarak / waktu;
+
+   // Mencetak hasil perhitungan
+   cout << "Kecepatan rata-rata: " << kecepatan << " km/jam" << endl;
+
+   return 0;
+}
