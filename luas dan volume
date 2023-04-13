@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double panjang, lebar, tinggi, luas, volume;
+
+   // Meminta input dari user
+   cout << "Masukkan panjang: ";
+   cin >> panjang;
+
+   cout << "Masukkan lebar: ";
+   cin >> lebar;
+
+   cout << "Masukkan tinggi: ";
+   cin >> tinggi;
+
+   // Menghitung luas persegi panjang
+   luas = panjang * lebar;
+
+   // Menghitung volume balok
+   volume = panjang * lebar * tinggi;
+
+   // Mencetak hasil perhitungan
+   cout << "Luas persegi panjang: " << luas << endl;
+   cout << "Volume balok: " << volume << endl;
+
+   return 0;
+}
