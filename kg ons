@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double berat_kg, berat_oz, berat_lb, berat_g;
+
+   // Meminta input dari user
+   cout << "Masukkan berat dalam kilogram: ";
+   cin >> berat_kg;
+
+   // Menghitung berat dalam ons, pon, dan gram
+   berat_oz = berat_kg * 35.27396;
+   berat_lb = berat_kg * 2.20462;
+   berat_g = berat_kg * 1000.0;
+
+   // Mencetak hasil konversi
+   cout << berat_kg << " kilogram = " << berat_oz << " ons" << endl;
+   cout << berat_kg << " kilogram = " << berat_lb << " pon" << endl;
+   cout << berat_kg << " kilogram = " << berat_g << " gram" << endl;
+
+   return 0;
+}
