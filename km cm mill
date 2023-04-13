@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double jarak_km, jarak_m, jarak_cm, jarak_mil;
+
+   // Meminta input dari user
+   cout << "Masukkan jarak dalam kilometer: ";
+   cin >> jarak_km;
+
+   // Menghitung jarak dalam meter, sentimeter, dan mil
+   jarak_m = jarak_km * 1000.0;
+   jarak_cm = jarak_km * 100000.0;
+   jarak_mil = jarak_km / 1.60934;
+
+   // Mencetak hasil konversi
+   cout << jarak_km << " kilometer = " << jarak_m << " meter" << endl;
+   cout << jarak_km << " kilometer = " << jarak_cm << " sentimeter" << endl;
+   cout << jarak_km << " kilometer = " << jarak_mil << " mil" << endl;
+
+   return 0;
+}
